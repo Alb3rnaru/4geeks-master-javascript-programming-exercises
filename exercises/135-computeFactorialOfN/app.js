@@ -1,5 +1,9 @@
 function computeFactorialOfN(n) {
-    // your code here
+    if (n == 0) {
+        return 1;
+    } else {
+        return n * computeFactorialOfN(n-1);
+    }
 }
 
 var output = computeFactorialOfN(3); console.log(output); // --> 6

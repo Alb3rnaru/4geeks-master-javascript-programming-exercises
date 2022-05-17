@@ -24,7 +24,7 @@ test('if the punctuation is from 100 to 90 it must return grade "A".', () => {
 test('if the punctuation is from 89 to 80 it must return grade "B".', () => {
     const convertScoreToGradeWithPlusAndMinus = rewire('./app.js').__get__("convertScoreToGradeWithPlusAndMinus");
 
-    expect(convertScoreToGradeWithPlusAndMinus(83)).toBe('B');
+    expect(convertScoreToGradeWithPlusAndMinus(83)).toBe('B+');
 })
 
 test('if the punctuation is from 79 to 70 it must return grade "C".', () => {
